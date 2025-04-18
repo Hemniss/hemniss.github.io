@@ -7,12 +7,6 @@
   <meta name="description" content="Une dernière surprise pour Babsy Babs">
   <!-- Lien vers la même feuille de style pour une apparence cohérente -->
   <link rel="stylesheet" href="css/styles.css">
-  <!-- Ajout de l'API YouTube -->
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <!-- Débogage console -->
-  <script>
-    console.log('Page3 chargée - YouTube API sera chargée ensuite');
-  </script>
   <style>
     /* Styles spécifiques à cette page */
     .joke-container {
@@ -90,26 +84,5 @@
       </div>
     </div>
   </div>
-  
-  <!-- Lecteur YouTube correctement positionné -->
-  <div id="youtube-player-container" style="position: fixed; left: -9999px; top: -9999px; z-index: -1;"></div>
-  
-  <!-- Notification en bas à droite -->
-  <div id="music-notification" class="notification">
-    <div class="notification-icon">🎵</div>
-    <div class="notification-content">
-      <div class="notification-title">Musique en arrière-plan</div>
-      <div class="notification-text">Cliquez n'importe où sur la page pour activer la musique</div>
-    </div>
-    <button class="notification-close" id="close-notification">×</button>
-  </div>
-
-  <!-- Bouton de contrôle de la musique -->
-  <button id="music-control" class="music-control" title="Lecture">
-    ▶️
-  </button>
-  
-  <!-- Script pour la cohérence visuelle -->
-  <script src="js/script.js"></script>
 </body>
 </html>
