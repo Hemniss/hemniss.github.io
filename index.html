@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pour notre Babsy Babs adorée</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Une page spécialement pour Babsy Babs">
+  <!-- Lien vers la feuille de style externe -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Ajout de l'API YouTube -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <!-- Ajout de débogage console -->
+  <script>
+    console.log('Page chargée - YouTube API sera chargée ensuite');
+  </script>
+</head>
+<body>
+  <!-- Lien vers page2.html englobant le conteneur principal -->
+  <a href="page2.html" style="text-decoration: none;">
+    <div class="joke-container">
+      <div class="joke-title">Pour notre Babsy Babs adorée</div>
+      <div class="joke-text">
+        Notre naine portugaise favorite qui s'est heureusement<br>
+        <strong>faite kidnapper&nbsp;!</strong>
+      </div>
+    </div>
+  </a>
+  
+  <!-- Lecteur YouTube correctement positionné à l'extérieur du lien clickable -->
+  <div id="youtube-player-container" style="position: fixed; left: -9999px; top: -9999px; z-index: -1;"></div>
+  
+  <!-- Notification en bas à droite -->
+  <div id="music-notification" class="notification">
+    <div class="notification-icon">🎵</div>
+    <div class="notification-content">
+      <div class="notification-title">Musique en arrière-plan</div>
+      <div class="notification-text">Cliquez n'importe où sur la page pour activer la musique</div>
+    </div>
+    <button class="notification-close" id="close-notification">×</button>
+  </div>
+
+  <!-- Bouton de contrôle de la musique -->
+  <button id="music-control" class="music-control" title="Lecture">
+    ▶️
+  </button>
+
+  <!-- Lien vers le script externe -->
+  <script src="js/script.js"></script>
+</body>
+</html>
